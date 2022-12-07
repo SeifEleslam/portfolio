@@ -1,3 +1,20 @@
+html,
+body {
+  scroll-behavior: smooth;
+  background-color: #282c34;
+}
+ /* Hide scrollbar for Chrome, Safari and Opera */
+ .App::-webkit-scrollbar {
+   display: none;
+ }
+
+ /* Hide scrollbar for IE, Edge and Firefox */
+ .App {
+   -ms-overflow-style: none;
+   /* IE and Edge */
+   scrollbar-width: none;
+   /* Firefox */
+ }
 .App {
   text-align: center;
 }
@@ -6,6 +23,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+body{
+  font-display: swap
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -35,4 +57,32 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+svg {
+  filter: url(#shadow);
+}
+
+.text-shadow{
+  text-shadow: 2px 2px 8px black;
+}
+.Alumni{
+  font-family: 'Alumni Sans';
+  font-size: 10vh;
+}
+.cool-color :hover{
+  
+  background: -webkit-linear-gradient(#aaa, #d8b15d);
+  -webkit-text-fill-color: transparent;
+}
+hr{
+  height:1.1vh;
+  background: #d8b15d;
+  box-shadow: #f6d094;
+}
+.anime-delay-500{
+  --animate-duration: 1000ms;
+}
+.rotated-text{
+  writing-mode:sideways-lr;
 }
